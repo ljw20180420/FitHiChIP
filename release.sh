@@ -8,7 +8,7 @@ then
 fi
 
 git commit -am "release ${version}"
-git push
+git push -u origin
 gh release create "${version}" \
     --generate-notes \
     --fail-on-no-commits
